@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="android.csulb.edu.tacopronto.fillings">
+    <ImageView
+        android:id="@+id/image_taco"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/tacos" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taco Pronto"
+        android:id="@+id/textView"
+        android:layout_toRightOf="@+id/image_taco"
+        android:layout_alignTop="@+id/image_taco"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123 Euclid Ave."
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/image_taco"
+        android:layout_toEndOf="@+id/image_taco"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1(551)242-5898"
+        android:id="@+id/textView3"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/image_taco"
+        android:layout_toEndOf="@+id/image_taco"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Fillings"
+        android:id="@+id/textView4"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:singleLine="false"
+        android:layout_below="@+id/image_taco"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next "
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginBottom="34dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beef"
+        android:id="@+id/checkBox_beef"
+        android:checked="false"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chicken"
+        android:id="@+id/checkBox_chicken"
+        android:layout_below="@+id/checkBox_beef"
+        android:layout_alignLeft="@+id/checkBox_beef"
+        android:layout_alignStart="@+id/checkBox_beef"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="White Fish"
+        android:id="@+id/checkBox_whitefish"
+        android:layout_below="@+id/checkBox_chicken"
+        android:layout_alignLeft="@+id/checkBox_chicken"
+        android:layout_alignStart="@+id/checkBox_chicken"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cheese"
+        android:id="@+id/checkBox_cheese"
+        android:layout_below="@+id/checkBox_whitefish"
+        android:layout_alignLeft="@+id/checkBox_whitefish"
+        android:layout_alignStart="@+id/checkBox_whitefish"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SeaFood"
+        android:id="@+id/checkBox_seafood"
+        android:layout_below="@+id/checkBox_cheese"
+        android:layout_alignLeft="@+id/checkBox_cheese"
+        android:layout_alignStart="@+id/checkBox_cheese"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rice"
+        android:id="@+id/checkBox_rice"
+        android:layout_alignTop="@+id/checkBox_beef"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beans"
+        android:id="@+id/checkBox_beans"
+        android:layout_below="@+id/checkBox_rice"
+        android:layout_alignLeft="@+id/checkBox_rice"
+        android:layout_alignStart="@+id/checkBox_rice"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pico de Gallo"
+        android:id="@+id/checkBox_picodegallo"
+        android:layout_alignTop="@+id/checkBox_whitefish"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guacamole"
+        android:id="@+id/checkBox_guacamole"
+        android:layout_below="@+id/checkBox_picodegallo"
+        android:layout_alignLeft="@+id/checkBox_picodegallo"
+        android:layout_alignStart="@+id/checkBox_picodegallo"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LBT"
+        android:id="@+id/checkBox_lbt"
+        android:checked="false"
+        android:layout_below="@+id/checkBox_guacamole"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+</RelativeLayout>
